@@ -29,21 +29,21 @@
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Tropicalogy home">
-        <!-- Inline palm-tree mark sampled from the logo -->
-        <svg viewBox="0 0 100 100" aria-hidden="true" fill="currentColor">
-          <path d="M50 38c0-2 1-3 2-3 5-1 12 0 18 4-5-7-12-10-19-9 2-4 6-7 11-8-7 0-13 3-16 8-3-5-9-8-16-8 5 1 9 4 11 8-7-1-14 2-19 9 6-4 13-5 18-4 1 0 2 1 2 3v36c0 1 1 2 2 2h4c1 0 2-1 2-2c0-12 0-24 0-36z" />
-          <ellipse cx="50" cy="80" rx="22" ry="3" />
-        </svg>
-        Tropicalogy
+        <img src="images/logo-no-background.png" alt="Tropicalogy" />
       </a>
+
+      <!-- Tapered line divider beneath logo -->
+      <div class="header-divider" aria-hidden="true">
+        <span class="header-divider__line"></span>
+      </div>
 
       <nav class="nav" aria-label="Primary">
         <ul class="nav-list" id="primary-nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#beyond">Our Work</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="services/commercial.html">Commercial</a></li>
+          <li><a href="services/residential.html">Residential</a></li>
+          <li><a href="services/events-workshops.html">Events</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <a href="contact.html" class="btn btn--primary header-cta">
@@ -66,11 +66,10 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-content reveal">
-            <p class="eyebrow hero-eyebrow">Tampa Bay · Est. by Nathan</p>
             <h1 class="hero-headline">
-              Living design<br />
-              for spaces that<br />
-              <em>breathe.</em>
+              Living design,<br />
+              installed and<br />
+              <em>maintained.</em>
             </h1>
             <p class="hero-sub">
               Interior plant installation, maintenance, and biophilic experiences — for offices, homes, and everything in between.
@@ -86,50 +85,36 @@
             </div>
 
             <div class="hero-meta">
-              <div class="hero-meta-item">
-                <strong>Free</strong>
-                <span>Consultations</span>
+              <div class="hero-meta-pill">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Free consultations</span>
               </div>
-              <div class="hero-meta-item">
-                <strong>Tampa Bay</strong>
-                <span>& Central FL</span>
+              <div class="hero-meta-pill">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Locally owned</span>
               </div>
-              <div class="hero-meta-item">
-                <strong>1 desk → atrium</strong>
-                <span>Any scale</span>
+              <div class="hero-meta-pill">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Tampa Bay &amp; Central Florida</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-visual reveal" aria-hidden="true">
-            <!-- Decorative SVG palm leaf -->
-            <svg class="hero-decor-leaf" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="hero-visual reveal">
+            <!-- Decorative SVG palm leaf overlay -->
+            <svg class="hero-decor-leaf" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M100 20c0 0-40 30-50 80s30 80 50 80c20 0 60-30 50-80S100 20 100 20z" stroke="#e7e0cd" stroke-width="1" opacity="0.4"/>
               <path d="M100 30c0 50 0 100 0 150M70 60c10 20 20 30 30 40M130 60c-10 20-20 30-30 40M60 100c15 15 25 25 40 30M140 100c-15 15-25 25-40 30M75 140c10 10 15 15 25 20M125 140c-10 10-15 15-25 20" stroke="#e7e0cd" stroke-width="1" opacity="0.6"/>
             </svg>
-            <!-- Placeholder gradient; replace src with photo when ready -->
-            <img src="images/hero.jpg" alt="" onerror="this.style.display='none'" />
-            <div class="hero-visual-caption">
-              <span>The study of all things tropical.</span>
-              <span>— Plants &amp; vibes</span>
-            </div>
+            <img src="images/light-and-airy-white-and-marble-bar-with-hanging.jpg" alt="Camryn put text" />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ========================= MARQUEE (CLIENT LOGOS) ========================= -->
-    <section class="marquee" aria-label="Selected clients">
-      <p class="eyebrow marquee-label">Trusted by teams across Tampa Bay</p>
-      <div class="marquee-track">
-        <a href="#" class="marquee-item" aria-label="Client one">logo-1</a>
-        <a href="#" class="marquee-item" aria-label="Client two">logo-2</a>
-        <a href="#" class="marquee-item" aria-label="Client three">logo-3</a>
-        <a href="#" class="marquee-item" aria-label="Client four">logo-4</a>
-        <a href="#" class="marquee-item" aria-label="Client five">logo-5</a>
-        <a href="#" class="marquee-item" aria-label="Client six">logo-6</a>
-        <a href="#" class="marquee-item" aria-label="Client seven">logo-7</a>
-        <a href="#" class="marquee-item" aria-label="Client eight">logo-8</a>
       </div>
     </section>
 
@@ -144,121 +129,146 @@
         </div>
 
         <div class="services-grid">
-          <a class="service-card reveal" href="services/commercial.html">
-            <span class="service-card__number">01 / Commercial</span>
-            <h3>Commercial Installation &amp; Maintenance</h3>
-            <p>
-              Offices, lobbies, restaurants, retail. Living walls, statement specimens, and ongoing care that keeps everything thriving — including bulk corporate gifting.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="services/commercial.html" style="--card-bg: url('/images/calm-office-space-with-plants-in-planters.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Commercial Installation &amp; Maintenance</h3>
+              <p>
+                Offices, lobbies, restaurants, retail. Living walls, statement specimens, and ongoing care that keeps everything thriving — including bulk corporate gifting.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
 
-          <a class="service-card reveal" href="services/residential.html">
-            <span class="service-card__number">02 / Residential</span>
-            <h3>Residential &amp; Home</h3>
-            <p>
-              Custom herb gardens, plant health checks on existing collections, and educational visits covering pest management, propagation, and care.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="services/residential.html" style="--card-bg: url('/images/bright-indoor-plants-near-a-window-with-natural-li.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Residential &amp; Home</h3>
+              <p>
+                Custom herb gardens, plant health checks on existing collections, and educational visits covering pest management, propagation, and care.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
 
-          <a class="service-card reveal" href="services/events-workshops.html">
-            <span class="service-card__number">03 / Events</span>
-            <h3>Events &amp; Workshops</h3>
-            <p>
-              Plant bingo, paint &amp; sip, team-building horticulture sessions — hosted at your venue. Everyone goes home with a plant and a styled container.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="services/events-workshops.html" style="--card-bg: url('/images/decor-in-the-interior-of-a-cafe.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Events &amp; Workshops</h3>
+              <p>
+                Plant bingo, paint &amp; sip, team-building horticulture sessions — hosted at your venue. Everyone goes home with a plant and a styled container.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
 
-          <a class="service-card reveal" href="services/corporate-gifting.html">
-            <span class="service-card__number">04 / Gifting</span>
-            <h3>Corporate Gifting</h3>
-            <p>
-              Bulk pricing for office-wide installations, holiday and client gifts, and onboarding kits. Everyone gets a plant. The whole office feels alive.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="services/corporate-gifting.html" style="--card-bg: url('/images/young-green-plants-in-pots-in-eco-office-interior.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Corporate Gifting</h3>
+              <p>
+                Bulk pricing for office-wide installations, holiday and client gifts, and onboarding kits. Everyone gets a plant. The whole office feels alive.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
 
-          <a class="service-card reveal" href="services/specialty-projects.html">
-            <span class="service-card__number">05 / Specialty</span>
-            <h3>Specialty Projects</h3>
-            <p>
-              Healthcare facilities, airports, wellness spaces, propagation walls, themed installations. If it doesn't fit a category, it probably fits here.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="services/specialty-projects.html" style="--card-bg: url('/images/food-court-decorated-with-plants.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Specialty Projects</h3>
+              <p>
+                Healthcare facilities, airports, wellness spaces, propagation walls, themed installations. If it doesn't fit a category, it probably fits here.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
 
-          <a class="service-card reveal" href="contact.html">
-            <span class="service-card__number">06 / Anything else</span>
-            <h3>Tell us what you're imagining.</h3>
-            <p>
-              Have an idea that doesn't fit on a service page? Good. That's where the most interesting projects start. Free consultations, always.
-            </p>
-            <span class="service-card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none">
-                <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
+          <a class="service-card reveal" href="contact.html" style="--card-bg: url('/images/gardening-woman-pruning-plants-and-ferns-indoors.jpg');">
+            <span class="service-card__overlay" aria-hidden="true"></span>
+            <div class="service-card__content">
+              <h3>Tell us what you're imagining.</h3>
+              <p>
+                Have an idea that doesn't fit on a service page? Good. That's where the most interesting projects start. Free consultations, always.
+              </p>
+              <span class="service-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ========================= BEYOND THE BASICS ========================= -->
-    <section class="section beyond" id="beyond">
+    <!-- ========================= MARQUEE (CLIENT LOGOS) ========================= -->
+    <section class="marquee" aria-label="Selected clients">
+      <p class="eyebrow marquee-label">Trusted by</p>
+      <div class="marquee-track">
+        <a href="#" class="marquee-item" aria-label="Client one">logo-1</a>
+        <a href="#" class="marquee-item" aria-label="Client two">logo-2</a>
+        <a href="#" class="marquee-item" aria-label="Client three">logo-3</a>
+        <a href="#" class="marquee-item" aria-label="Client four">logo-4</a>
+        <a href="#" class="marquee-item" aria-label="Client five">logo-5</a>
+        <a href="#" class="marquee-item" aria-label="Client six">logo-6</a>
+        <a href="#" class="marquee-item" aria-label="Client seven">logo-7</a>
+        <a href="#" class="marquee-item" aria-label="Client eight">logo-8</a>
+      </div>
+    </section>
+
+    <!-- ========================= GALLERY PREVIEW ========================= -->
+    <section class="section gallery-preview">
       <div class="container">
         <div class="section-header reveal">
-          <p class="eyebrow">Beyond the Basics</p>
+          <h2>Recent work.</h2>
           <p>
-            Most plant services drop the same fiddle-leaf fig in the same corner and call it design. We'd rather not. The work below shows what happens when you let curiosity lead the species list.
+            A peek at recent installations across Tampa Bay — offices, homes, lobbies, and the occasional event styling.
           </p>
         </div>
 
-        <div class="beyond-grid">
-          <article class="beyond-item beyond-item--placeholder reveal">
-            <img src="images/work-1.jpg" alt="" onerror="this.style.display='none'" />
-            <div class="beyond-item-content">
-              <h3>Living Walls &amp; Verticals</h3>
-              <p>Custom-engineered green walls — from compact reception accents to two-story atrium installations.</p>
-            </div>
-          </article>
+        <div class="gallery-preview-grid reveal">
+          <a href="gallery.html" class="gallery-tile">
+            <img src="images/interior-plants-1.JPG" alt="Camryn put text" />
+          </a>
+          <a href="gallery.html" class="gallery-tile">
+            <img src="images/cool-planter-3.JPG" alt="Camryn put text" />
+          </a>
+          <a href="gallery.html" class="gallery-tile">
+            <img src="images/cool-planter.JPG" alt="Camryn put text" />
+          </a>
+          <a href="gallery.html" class="gallery-tile">
+            <img src="images/window-boxes.JPG" alt="Camryn put text" />
+          </a>
+        </div>
 
-          <article class="beyond-item beyond-item--placeholder reveal">
-            <img src="images/work-2.jpg" alt="" onerror="this.style.display='none'" />
-            <div class="beyond-item-content">
-              <h3>Rare &amp; Statement Specimens</h3>
-              <p>Unusual aroids, large-format specimens, and curated plant pairings sourced for character, not catalog convenience.</p>
-            </div>
-          </article>
-
-          <article class="beyond-item beyond-item--placeholder reveal">
-            <img src="images/work-3.jpg" alt="" onerror="this.style.display='none'" />
-            <div class="beyond-item-content">
-              <h3>Themed &amp; Custom Containers</h3>
-              <p>Containers chosen and styled to extend your brand, your room, or the mood you're after. No generic terracotta.</p>
-            </div>
-          </article>
+        <div style="text-align:center; margin-top: var(--space-12);" class="reveal">
+          <a href="gallery.html" class="btn btn--ghost">
+            See the full gallery
+            <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -275,25 +285,48 @@
 
         <div class="benefits-grid">
           <article class="benefit reveal">
-            <p class="benefit__stat">87<sup>%</sup></p>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3c-1 4-4 6-4 9a4 4 0 0 0 8 0c0-3-3-5-4-9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="M12 16v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
             <h3>Cleaner Air</h3>
             <p>Many indoor plants measurably reduce common airborne toxins, improving air quality in the spaces where people spend most of their time.</p>
           </article>
 
           <article class="benefit reveal">
-            <p class="benefit__stat">38<sup>%</sup></p>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L9 13L13 17L20 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 10h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
             <h3>Higher Productivity</h3>
             <p>Offices with thoughtful plant design see meaningful gains in focus and creative output across teams.</p>
           </article>
 
           <article class="benefit reveal">
-            <p class="benefit__stat">15<sup>%</sup></p>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M9 14c1 1 5 1 6 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="9" cy="10" r="0.8" fill="currentColor"/>
+                <circle cx="15" cy="10" r="0.8" fill="currentColor"/>
+              </svg>
+            </span>
             <h3>Less Stress</h3>
             <p>Greenery is linked to lower stress hormones and improved mood — quietly, every day, in the background.</p>
           </article>
 
           <article class="benefit reveal">
-            <p class="benefit__stat">25<sup>%</sup></p>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4"/>
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
             <h3>Sharper Focus</h3>
             <p>Biophilic environments support concentration, memory, and overall cognitive well-being.</p>
           </article>
@@ -345,14 +378,11 @@
         <div class="about-grid">
           <div class="about-photo reveal">
             <span class="about-photo__badge">Founder</span>
-            <img src="images/nathan.jpg" alt="Nathan, founder of Tropicalogy" onerror="this.style.display='none'" />
+            <img src="images/nathan.JPG" alt="Camryn put text" />
           </div>
           <div class="about-content reveal">
             <p class="eyebrow">About Tropicalogy</p>
             <h2>Meet Nathan.</h2>
-            <p class="lede">
-              "Tropicalogy is the study of all things tropical — plants and vibes. I started this to do plant design the way I'd want it done for my own space: personal, well-considered, and a little bit unexpected."
-            </p>
             <p>
               Nathan founded Tropicalogy to bring genuinely thoughtful plant design to Tampa Bay — moving past the same tired species and containers, and treating each space as its own ecosystem. Whether it's a single desk plant or a full atrium, the bar is the same: pick what thrives, style it well, and care for it properly.
             </p>
@@ -368,47 +398,11 @@
       </div>
     </section>
 
-    <!-- ========================= GALLERY PREVIEW ========================= -->
-    <section class="section gallery-preview">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Recent work.</h2>
-          <p>
-            A peek at recent installations across Tampa Bay — offices, homes, lobbies, and the occasional event styling.
-          </p>
-        </div>
-
-        <div class="gallery-preview-grid reveal">
-          <a href="gallery.html" class="gallery-tile">
-            <img src="images/gallery-1.jpg" alt="Recent plant installation" onerror="this.style.display='none'" />
-          </a>
-          <a href="gallery.html" class="gallery-tile">
-            <img src="images/gallery-2.jpg" alt="Recent plant installation" onerror="this.style.display='none'" />
-          </a>
-          <a href="gallery.html" class="gallery-tile">
-            <img src="images/gallery-3.jpg" alt="Recent plant installation" onerror="this.style.display='none'" />
-          </a>
-          <a href="gallery.html" class="gallery-tile">
-            <img src="images/gallery-4.jpg" alt="Recent plant installation" onerror="this.style.display='none'" />
-          </a>
-        </div>
-
-        <div style="text-align:center; margin-top: var(--space-12);" class="reveal">
-          <a href="gallery.html" class="btn btn--ghost">
-            See the full gallery
-            <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- ========================= CTA BANNER ========================= -->
     <section class="cta-banner">
       <div class="container">
         <div class="cta-banner-inner reveal">
-          <p class="eyebrow" style="justify-content:center;color:var(--cream-deep);">Ready when you are</p>
+          <p class="eyebrow" style="justify-content:center;color:var(--forest);">Ready when you are</p>
           <h2>Let's bring your space to life.</h2>
           <p>
             Free consultations across Tampa Bay and Central Florida. Tell us about your space — even if you're not sure what you want yet.
@@ -430,49 +424,30 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" aria-label="Tropicalogy home">
-            <svg viewBox="0 0 100 100" aria-hidden="true" fill="currentColor">
-              <path d="M50 38c0-2 1-3 2-3 5-1 12 0 18 4-5-7-12-10-19-9 2-4 6-7 11-8-7 0-13 3-16 8-3-5-9-8-16-8 5 1 9 4 11 8-7-1-14 2-19 9 6-4 13-5 18-4 1 0 2 1 2 3v36c0 1 1 2 2 2h4c1 0 2-1 2-2c0-12 0-24 0-36z" />
-              <ellipse cx="50" cy="80" rx="22" ry="3" />
-            </svg>
-            Tropicalogy
+          <a href="index.html" class="logo footer-logo" aria-label="Tropicalogy home">
+            <img src="images/logo-tan.png" alt="Tropicalogy" />
           </a>
           <p>The study of all things tropical — plants and vibes, brought to Tampa Bay spaces.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services/commercial.html">Commercial</a></li>
-            <li><a href="services/residential.html">Residential</a></li>
-            <li><a href="services/events-workshops.html">Events &amp; Workshops</a></li>
-            <li><a href="services/corporate-gifting.html">Corporate Gifting</a></li>
-            <li><a href="services/specialty-projects.html">Specialty Projects</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Studio</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
         </div>
 
         <div class="footer-col">
           <h4>Connect</h4>
           <ul>
             <li><a href="tel:8135620959">(813) 562-0959</a></li>
-            <li><a href="mailto:Tropicalogy.plantservices@gmail.com">Email</a></li>
-            <li><a href="https://www.instagram.com/tropicalogy.co/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="mailto:Tropicalogy.plantservices@gmail.com">Tropicalogy.plantservices@gmail.com</a></li>
           </ul>
+          <a href="https://www.instagram.com/tropicalogy.co/" target="_blank" rel="noopener" class="social-icon" aria-label="Tropicalogy on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 Tropicalogy. Serving Tampa Bay &amp; Central Florida.</p>
-        <p>Site by friends, for plants.</p>
       </div>
     </div>
   </footer>
