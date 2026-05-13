@@ -476,7 +476,6 @@ p  { margin: 0; }
   font-size: 1.1rem;
 }
 
-/* Hero decorative SVG (palm leaf in corner of visual) */
 .hero-decor-leaf {
   position: absolute;
   top: -20px;
@@ -609,7 +608,6 @@ p  { margin: 0; }
   isolation: isolate;
 }
 
-/* White overlay — 90% opaque cream for WCAG AA contrast with forest text */
 .service-card__overlay {
   position: absolute;
   inset: 0;
