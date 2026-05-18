@@ -1311,3 +1311,299 @@ p  { margin: 0; }
   transform: scale(1.04);
   filter: saturate(1.05);
 }
+
+
+/* ==========================================================================
+   Commercial Page
+   ========================================================================== */
+
+/* Long-form prose block — used on commercial subpage */
+.commercial-prose {
+  max-width: 70ch;
+}
+
+.commercial-prose p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: var(--space-6);
+}
+
+.commercial-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Space-type list — bordered rows, like the process list but two-column */
+.space-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.space-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--line);
+}
+
+.space-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 800px) {
+  .space-row {
+    grid-template-columns: 1fr 1.6fr;
+    gap: var(--space-12);
+    padding: var(--space-10) 0;
+    align-items: start;
+  }
+}
+
+.space-row h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+}
+
+.space-row p {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--ink);
+  max-width: 60ch;
+}
+
+/* ==========================================================================
+   Contact Page + Thank You Page
+   Append to existing style.css
+   ========================================================================== */
+
+/* Contact layout
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+}
+
+@media (min-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.1fr;
+    gap: var(--space-16);
+    align-items: start;
+  }
+}
+
+/* Left column — intro + details */
+.contact-intro .eyebrow {
+  margin-bottom: var(--space-6);
+}
+
+.contact-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 300;
+  margin-bottom: var(--space-6);
+}
+.contact-title em {
+  font-style: italic;
+  font-weight: 350;
+  color: var(--forest-soft);
+}
+
+.contact-lede {
+  font-size: clamp(1.1rem, 1.4vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 44ch;
+  margin-bottom: var(--space-10);
+}
+
+.contact-details {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-detail__label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.contact-detail__value {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--forest);
+  transition: color 0.3s;
+}
+
+a.contact-detail__value:hover {
+  color: var(--terracotta);
+}
+
+/* Right column — form
+   -------------------------------------------------------------------------- */
+.contact-form-wrap {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.contact-form {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.form-row {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.form-row--split {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 540px) {
+  .form-row--split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--forest);
+}
+
+.form-optional {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.form-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--forest);
+  box-shadow: 0 0 0 3px rgba(28, 56, 33, 0.08);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.contact-submit {
+  justify-self: start;
+  margin-top: var(--space-2);
+}
+
+.contact-form-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Honeypot — visually hidden but reachable for bots */
+.contact-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Thank-you page
+   -------------------------------------------------------------------------- */
+.thankyou-section {
+  text-align: center;
+}
+
+.thankyou-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 4rem) 0;
+}
+
+.thankyou-leaf {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto var(--space-6);
+  color: var(--moss);
+}
+
+.thankyou-section .eyebrow {
+  margin-bottom: var(--space-5);
+}
+
+.thankyou-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 300;
+  margin-bottom: var(--space-6);
+}
+.thankyou-title em {
+  font-style: italic;
+  font-weight: 350;
+  color: var(--forest-soft);
+}
+
+.thankyou-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: var(--space-10);
+}
+
+.thankyou-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .contact-detail__value {
+    font-size: 1rem;
+  }
+}

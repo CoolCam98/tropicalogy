@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tropicalogy</title>
+  <meta name="description" content="Get in touch with Tropicalogy — free consultations for interior plant design, installation, and maintenance across Tampa Bay and Central Florida." />
+  <meta name="theme-color" content="#1c3821" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Tropicalogy" />
+  <meta property="og:description" content="Free consultations for interior plant design across Tampa Bay." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tropicalogy" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Tropicalogy home">
+        <img src="images/Logo-no-background.png" alt="Tropicalogy" />
+      </a>
+
+      <div class="header-divider" aria-hidden="true">
+        <span class="header-divider__line"></span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="services/commercial.html">Commercial</a></li>
+          <li><a href="services/residential.html">Residential</a></li>
+          <li><a href="services/events-workshops.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary header-cta">
+          Discuss Your Project
+          <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========================= CONTACT ========================= -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: intro + direct details -->
+          <div class="contact-intro reveal">
+            <p class="eyebrow">Get in touch</p>
+            <h1 class="contact-title">
+              Tell us about<br />
+              <em>your space.</em>
+            </h1>
+            <p class="contact-lede">
+              Consultations are always free, and there's no obligation. Whether you have a clear plan or just a vague sense that a room could feel better, we'd love to hear about it.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span class="contact-detail__label">Call or text</span>
+                <a href="tel:8135620959" class="contact-detail__value">(813) 562-0959</a>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-detail__label">Email</span>
+                <a href="mailto:Tropicalogy.plantservices@gmail.com" class="contact-detail__value">Tropicalogy.plantservices@gmail.com</a>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-detail__label">Instagram</span>
+                <a href="https://www.instagram.com/tropicalogy.co/" target="_blank" rel="noopener" class="contact-detail__value">@tropicalogy.co</a>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-detail__label">Service area</span>
+                <span class="contact-detail__value">Tampa Bay &amp; Central Florida</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: the form -->
+          <div class="contact-form-wrap reveal">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/thank-you.html"
+              class="contact-form"
+            >
+              <!-- Netlify form identifier -->
+              <input type="hidden" name="form-name" value="contact" />
+
+              <!-- Honeypot field for spam — hidden from real users -->
+              <p class="contact-hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+              </div>
+
+              <div class="form-row form-row--split">
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone <span class="form-optional">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="message">What can we help with?</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Tell us about what you're looking for!"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary contact-submit">
+                Send Message
+                <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <p class="contact-form-note">
+                We'll get back to you within a couple of business days.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="Tropicalogy home">
+            <img src="images/logo-tan.png" alt="Tropicalogy" />
+          </a>
+          <p>The study of all things tropical — plants and vibes, brought to Tampa Bay spaces.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="tel:8135620959">(813) 562-0959</a></li>
+            <li><a href="mailto:Tropicalogy.plantservices@gmail.com">Tropicalogy.plantservices@gmail.com</a></li>
+          </ul>
+          <a href="https://www.instagram.com/tropicalogy.co/" target="_blank" rel="noopener" class="social-icon" aria-label="Tropicalogy on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tropicalogy. Serving Tampa Bay &amp; Central Florida.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
