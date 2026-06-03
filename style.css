@@ -489,7 +489,7 @@ p  { margin: 0; }
 /* Marquee
    ========================================================================== */
 .marquee {
-  padding: var(--space-12) 0;
+  padding: var(--space-10) 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--paper);
@@ -501,15 +501,21 @@ p  { margin: 0; }
   margin-bottom: var(--space-8);
 }
 
-.marquee-track {
+.marquee-inner {
   display: flex;
-  gap: var(--space-16);
-  animation: marquee 40s linear infinite;
   width: max-content;
+  animation: marquee-scroll 18s linear infinite;
 }
 
-.marquee:hover .marquee-track {
+.marquee:hover .marquee-inner {
   animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 2.5rem; /* half-gap on each end so spacing is even at the seam */
 }
 
 .marquee-item {
@@ -517,16 +523,8 @@ p  { margin: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 160px;
-  height: 50px;
-  font-family: var(--font-display);
-  font-style: italic;
-  color: var(--forest);
-  opacity: 0.5;
-  font-size: 1.5rem;
+  opacity: 0.55;
   transition: opacity 0.3s, transform 0.3s;
-  cursor: pointer;
-  letter-spacing: -0.01em;
 }
 
 .marquee-item:hover {
@@ -535,14 +533,20 @@ p  { margin: 0; }
 }
 
 .marquee-item img {
-  max-height: 40px;
+  height: 200px;
   width: auto;
+  max-width: 200px;
   object-fit: contain;
+  display: block;
 }
 
-@keyframes marquee {
+@keyframes marquee-scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-inner { animation: none; }
 }
 
 /* Section header
