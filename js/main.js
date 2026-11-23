@@ -45,9 +45,13 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  // Duplicate marquee items for seamless loop
-  const marqueeTrack = document.querySelector('.marquee-track');
-  if (marqueeTrack) {
-    marqueeTrack.innerHTML = marqueeTrack.innerHTML + marqueeTrack.innerHTML;
-  }
+  // Fill each marquee track equally so the -50% loop stays seamless on wide
+  // screens. Clones are hidden from screen readers so logos are read once.
+  document.querySelectorAll('.marquee-track').forEach(function (track) {
+    Array.prototype.slice.call(track.children).forEach(function (item) {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  });
 })();
