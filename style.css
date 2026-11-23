@@ -80,15 +80,16 @@ button {
 
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
+  transform: translateY(-110%);
   background: var(--forest);
   color: var(--cream);
   padding: var(--space-2) var(--space-4);
   z-index: 1000;
-  transition: top 0.2s;
+  transition: transform 0.2s;
 }
-.skip-link:focus { top: 0; }
+.skip-link:focus { transform: translateY(0); }
 
 :focus-visible {
   outline: 2px solid var(--forest);
@@ -1148,6 +1149,12 @@ p  { margin: 0; }
   transition: color 0.3s;
 }
 .footer-col a:hover { color: var(--cream); }
+.footer-col li a,
+.contact-detail__value {
+  display: inline-block;
+  padding-block: 0.6rem;
+  overflow-wrap: anywhere;
+}
 
 .social-icon {
   display: inline-flex;
@@ -1191,12 +1198,12 @@ p  { margin: 0; }
 
 /* Scroll reveal
    ========================================================================== */
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
 }
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }

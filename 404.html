@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Tropicalogy</title>
+  <meta name="description" content="This page could not be found." />
+  <meta name="theme-color" content="#1c3821" />
+  <meta name="robots" content="noindex" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/index.html" class="logo" aria-label="Tropicalogy home">
+        <img width="400" height="196" src="/images/logo-no-background.png" alt="Tropicalogy" />
+      </a>
+
+      <div class="header-divider" aria-hidden="true">
+        <span class="header-divider__line"></span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="/services/commercial.html">Commercial</a></li>
+          <li><a href="/services/residential.html">Residential</a></li>
+          <li><a href="/services/events-workshops.html">Events</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="/contact.html" class="btn btn--primary header-cta">
+          Discuss Your Project
+          <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section thankyou-section">
+      <div class="container">
+        <div class="thankyou-inner reveal">
+          <svg class="thankyou-leaf" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M100 20c0 0-40 30-50 80s30 80 50 80c20 0 60-30 50-80S100 20 100 20z" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            <path d="M100 30c0 50 0 100 0 150M70 60c10 20 20 30 30 40M130 60c-10 20-20 30-30 40M60 100c15 15 25 25 40 30M140 100c-15 15-25 25-40 30M75 140c10 10 15 15 25 20M125 140c-10 10-15 15-25 20" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+          <p class="eyebrow" style="justify-content:center;">Error 404</p>
+          <h1 class="thankyou-title">Page not<br /><em>found.</em></h1>
+          <p class="thankyou-text">
+            The page you were looking for has moved or no longer exists. Head back home or reach out and we'll point you in the right direction.
+          </p>
+          <div class="thankyou-actions">
+            <a href="/gallery.html" class="btn btn--primary">
+              See our gallery
+              <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="/index.html" class="btn btn--ghost">Back home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/index.html" class="logo footer-logo" aria-label="Tropicalogy home">
+            <img decoding="async" loading="lazy" width="400" height="196" src="/images/logo-tan.png" alt="Tropicalogy" />
+          </a>
+          <p>The study of all things tropical — plants and vibes, brought to Tampa Bay spaces.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="tel:8135620959">(813) 562-0959</a></li>
+            <li><a href="mailto:Tropicalogy.plantservices@gmail.com">Tropicalogy.plantservices@gmail.com</a></li>
+          </ul>
+          <a href="https://www.instagram.com/tropicalogy.co/" target="_blank" rel="noopener" class="social-icon" aria-label="Tropicalogy on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tropicalogy. Serving Tampa Bay &amp; Central Florida.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
